@@ -12,6 +12,7 @@ begin
     gem.rubyforge_project = "celerity_parser"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
     gem.add_dependency 'jarib-celerity', '>= 0.0.6.10'
+    gem.platform = "java"
   end
 
   Jeweler::RubyforgeTasks.new

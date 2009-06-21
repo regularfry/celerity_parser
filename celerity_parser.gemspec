@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "celerity_parser.gemspec",
      "lib/celerity_parser.rb",
      "lib/celerity_parser/html_node.rb",
      "lib/celerity_parser/html_parser.rb",

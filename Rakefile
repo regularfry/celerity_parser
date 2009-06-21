@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "celerity_parser"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{Thin wrapper around a native Java HTML parser}
     gem.email = "alex@blackkettle.org"
     gem.homepage = "http://github.com/regularfry/celerity_parser"
     gem.authors = ["Alex Young"]

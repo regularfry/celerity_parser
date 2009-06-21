@@ -1,7 +1,57 @@
-= celerity_parser
+celerity_parser
+    by Alex Young 
+    http://github.com/regularfry/celerity_parser
 
-Description goes here.
+== DESCRIPTION:
 
-== Copyright
+A very thin wrapper around HtmlUnit's HTML parser to allow xpath searches of
+HTML documents. At the moment there's not much here. I don't know yet whether
+it's worth expanding the API to a full nokogiri/hpricot-style implementation.
+What's here works for what I need for now.
 
-Copyright (c) 2009 Alex Young. See LICENSE for details.
+
+== FEATURES/PROBLEMS:
+
+* Reuses HtmlUnit's parser as wrapped by celerity to provide a stable HTML parsing capability.
+
+== SYNOPSIS:
+
+Basic use:
+
+    root_node = CelerityParser.parse(html_content)
+    found_elements = root_node.search("//html/head/title")
+    found_elements.first.text # => "Html page title"
+
+
+== REQUIREMENTS:
+
+gem install celerity
+
+== INSTALL:
+
+jruby -S gem install celerity_parser --source=http://gems.github.com
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2009 Alex Young
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{celerity_parser}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
   s.platform = %q{java}
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Alex Young"]
-  s.date = %q{2009-06-21}
+  s.date = %q{2009-06-22}
   s.email = %q{alex@blackkettle.org}
   s.extra_rdoc_files = [
     "LICENSE",

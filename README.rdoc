@@ -5,14 +5,14 @@ celerity_parser
 == DESCRIPTION:
 
 A very thin wrapper around HtmlUnit's HTML parser to allow xpath searches of
-HTML documents. At the moment there's not much here. I don't know yet whether
-it's worth expanding the API to a full nokogiri/hpricot-style implementation.
-What's here works for what I need for now.
-
+HTML documents for JRuby. At the moment there's not much here. I don't know yet
+whether it's worth expanding the API to a full nokogiri/hpricot-style
+implementation.  What's here works for what I need for now.
 
 == FEATURES/PROBLEMS:
 
-* Reuses HtmlUnit's parser as wrapped by celerity to provide a stable HTML parsing capability.
+* Reuses HtmlUnit's parser as wrapped by celerity to provide a stable HTML
+* parsing capability.
 
 == SYNOPSIS:
 
@@ -25,11 +25,11 @@ Basic use:
 
 == REQUIREMENTS:
 
-gem install celerity
+    $ jruby -S gem install jarib-celerity --source=http://gems.github.com
 
 == INSTALL:
 
-jruby -S gem install celerity_parser --source=http://gems.github.com
+    $ jruby -S gem install celerity_parser --source=http://gems.github.com
 
 == LICENSE:
 

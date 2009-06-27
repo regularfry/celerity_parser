@@ -19,6 +19,10 @@ module CelerityParser
       wrap_java_nodes(@java_node.get_by_xpath(xpath))
     end
 
+    def []=(attr, value)
+      @java_node.setAttribute(attr, value)
+    end
+
     # The innerText of the node.
     def text
       @java_node.as_text
